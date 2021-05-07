@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+/* Typography */
+
+h1 {
+  color: white;
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 2rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+small {
+  margin-top: 1rem;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-size: 0.75em;
+}
+
+/* Layout */
+
+.container {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  max-width: 650px;
+  text-align: center;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+  -moz-box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+  box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+}
+
+input {
+  padding: 15px 20px;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-weight: 400;
+}
+
+input:focus {
+  border: 1px solid;
+  outline: hsl(249, 10%, 26%);
+}
+
+/* Buttons */
+
+button {
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: larger;
+  -webkit-box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+  -moz-box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+  box-shadow: 0 8px 12px -6px hsl(249, 10%, 26%);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.btn-try {
+  background: hsl(248, 32%, 49%);
+  font-size: 16px;
+}
+
+.btn-try span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn-trial {
+  background: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 1rem;
+}
+
+.error-text {
+  display: none;
+  text-align: end;
+  margin-top: 0;
+  color: hsl(0, 100%, 74%);
+}
+
+.form-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 27px;
+  right: 24px;
+  width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-text {
+    text-align: unset;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  button {
+    padding: 25px 30px;
+  }
+}
